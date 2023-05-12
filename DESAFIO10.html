@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Viginere+KEY</title>
+	<link rel="shortcut icon" href="hackear.png" type="image/png">
+	<style>
+		body {
+			background-color: #0a48a7;
+		}
+		h1 {
+			text-align: center;
+			color: #fff;
+			padding: 5px;
+			font-family: "Arial", sans-serif;
+			display: block;
+			margin: 0 auto;
+
+		}
+	header {
+			background-color: #cc1c1c;
+			padding: 5px;
+			max-width: 20%;
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			border: 3px solid #000;
+		}
+div {
+	position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+    }
+	#imagens {
+		position: fixed;
+		bottom: 0;
+		left: 30%;
+		transform: translateX(-50%);
+		width: 50%;
+		overflow: hidden;
+	}
+	.imagem-esquerda {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+	}
+	.imagem-direita {
+		position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-90%, -90%);
+    right: 0;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>DESAFIO 10</h1>
+	</header>
+	<main>
+		<div>
+			<label for="resposta"><strong>REPOSTA:</strong></label>
+			<input type="text" id="resposta">
+			<button onclick="verificar()">Confirmar</button>
+            </div>  
+            <div id="imagens">
+                <img src=".\4=CAPSLOCK.png" class="imagem-esquerda">
+                <img src=".\1-C-2-U=3VIRE.png" class="imagem-direita">
+				<img src=".\PERIODO+IOCA=.png" class="imagens">
+            </div>
+	</main>
+	<audio controls>
+		<source src=".\AUDIO.mp3" type="audio/mp3">
+	  </audio>
+	<script>
+    function verificar() {
+        let resposta = document.getElementById("resposta").value;
+        if (resposta === "desafiofinal") {
+            window.location.href = "CONCLUSAO.html";
+        } else {
+            alert("Resposta incorreta. Tente novamente.");
+        }
+    }
+</script>
+</body>
+</html>
