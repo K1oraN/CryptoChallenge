@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Louis</title>
+	<link rel="shortcut icon" href="hackear.png" type="image/png">
+	<style>
+
+		body {
+			background-color: #0a48a7;
+		}
+
+		h1 {
+			text-align: center;
+			color: #fff;
+			padding: 5px;
+			font-family: "Arial", sans-serif;
+			display: block;
+			margin: 0 auto;
+
+		}
+
+	header {
+			background-color: #cc1c1c;
+			padding: 5px;
+			max-width: 20%;
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			border: 3px solid #000;
+		}
+		.imagem1 {
+			position: absolute;
+			bottom: 0;
+			top: 1;
+			left: 1;
+			right: 0;
+		}
+		.imagem2 {
+			position: absolute;
+			bottom: 0;
+			top: 1;
+			left: 0;
+			right: 1;
+		}
+		.imagem3 {
+			position: absolute;
+			bottom: 1;
+			top: 0;
+			left: 1;
+			right: 0;
+		}
+		.imagem4 {
+			position: absolute;
+			bottom: 1;
+			top: 0;
+			left: 0;
+			right: 1;
+		}
+		.imagem5 {
+			transform: translate(0%, 150%);
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+		.imagem6 {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+	height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div {
+	position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+    }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>DESAFIO 1</h1>
+	</header>
+	
+	<main>
+		<img class="imagem imagem1" src=".\1.png" alt="Descrição da imagem">
+		<img class="imagem imagem2" src=".\2.png" alt="Descrição da imagem">
+		<img class="imagem imagem3" src=".\3.png" alt="Descrição da imagem">
+		<img class="imagem imagem4" src=".\5.png" alt="Descrição da imagem">
+		<img class="imagem imagem5" src=".\4.png" alt="Descrição da imagem">
+		<img class="imagem imagem6" src=".\6.jpg" alt="Descrição da imagem">
+		<div>
+			<label for="resposta"><strong>REPOSTA:</strong></label>
+			<input type="text" id="resposta">
+			<button onclick="verificar()">Confirmar</button>
+		</div>
+	</main>
+	
+	<script>
+    function verificar() {
+        let resposta = document.getElementById("resposta").value;
+        if (resposta === "1888") {
+            window.location.href = "DESAFIO2.html";
+        } else {
+            alert("Resposta incorreta. Tente novamente.");
+        }
+    }
+</script>
+</body>
+</html>

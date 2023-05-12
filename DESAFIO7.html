@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAKO</title>
+	<link rel="shortcut icon" href="hackear.png" type="image/png">
+	<style>
+		body {
+			background-color: #0a48a7;
+		}
+		h1 {
+			text-align: center;
+			color: #fff;
+			padding: 5px;
+			font-family: "Arial", sans-serif;
+			display: block;
+			margin: 0 auto;
+
+		}
+	header {
+			background-color: #cc1c1c;
+			padding: 5px;
+			max-width: 20%;
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			border: 3px solid #000;
+		}
+div {
+	position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+    }
+	#imagens {
+		position: fixed;
+		bottom: 0;
+		left: 30%;
+		transform: translateX(-50%);
+		width: 50%;
+		overflow: hidden;
+	}
+	.imagem-esquerda {
+		float: left;
+		width: 45%;
+		height: auto;
+		margin-right: 5%;
+	}
+	.imagem-direita {
+
+		width: 30%;
+		position: absolute;
+    	top: 50%;
+    	left: 70%;
+    	transform: translate(-50%, -50%);
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>DESAFIO 7</h1>
+	</header>
+	<main>
+		<div>
+			<label for="resposta"><strong>REPOSTA:</strong></label>
+			<input type="text" id="resposta">
+			<button onclick="verificar()">Confirmar</button>
+            </div>  
+            <div id="imagens">
+                <img src=".\O.png" class="imagem-esquerda">
+                <img src=".\FONE+ETICO.png" class="imagem-direita">
+            </div>
+	</main>
+	<script>
+    function verificar() {
+        let resposta = document.getElementById("resposta").value;
+        if (resposta === "error503") {
+            window.location.href = "DESAFIO8.html";
+        } else {
+            alert("Resposta incorreta. Tente novamente.");
+        }
+    }
+</script>
+</body>
+</html>
